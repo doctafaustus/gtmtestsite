@@ -11,6 +11,13 @@
 		}
 	</style>
 	<script>
+		// Data Layer
+	  dataLayer = [{
+	   	'pageCategory': 'signup',
+	   	'visitorType': 'high-value'
+	  }];
+
+	 	// GTM Container Code
 		(function(w,d,s,l,i) { 
 			w[l] = w[l] || [];
 			w[l].push({
@@ -27,12 +34,12 @@
 	</script>
 </head>
 <body>
-	<noscript>
-		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TFQCR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
 
 	<h1 id='title'>TEST Page</h1>
+
+	<a href="#" name="button1" onclick="dataLayer.push({'event': 'button1-click'});" >Button 1</a>
+
+		<a href="#" name="button2" onclick="dataLayer.push({'tripCategory': 'skiing2'});" >Button 1</a>
 
 </body>
 </html>
